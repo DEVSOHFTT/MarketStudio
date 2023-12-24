@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C97827DF-2433-4901-9E6E-71DFB197855A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IDEVStudioUI</RootNamespace>
+    <AssemblyName>IDEVStudioUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alerts\AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alerts\AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alerts\FormMessageBox.designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts\IDEVStudioUIMessageBox.cs" />
+    <Compile Include="Controls\Alignment.cs" />
+    <Compile Include="Controls\IDEVStudioUIBasicDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIBasicDateTimePicker.Designer.cs">
+      <DependentUpon>IDEVStudioUIBasicDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRecibo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRecibo.Designer.cs">
+      <DependentUpon>IDEVStudioUIRecibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRegProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRegProducto.Designer.cs">
+      <DependentUpon>IDEVStudioUIRegProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRegVenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIRegVenta.Designer.cs">
+      <DependentUpon>IDEVStudioUIRegVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUISimpleDatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUISimpleDatePicker.Designer.cs">
+      <DependentUpon>IDEVStudioUISimpleDatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUIToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUITextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IDEVStudioUITextBox.designer.cs">
+      <DependentUpon>IDEVStudioUITextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuColorTable.cs" />
+    <Compile Include="Controls\MenuRenderer.cs" />
+    <Compile Include="Controls\IDEVStudioUIDropDrown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Models\IDEVStudioUIProducto.Designer.cs">
+      <DependentUpon>IDEVStudioUIProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reproductor.cs" />
+    <EmbeddedResource Include="Alerts\AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alerts\FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IDEVStudioUIBasicDateTimePicker.resx">
+      <DependentUpon>IDEVStudioUIBasicDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\IDEVStudioUIRecibo.resx">
+      <DependentUpon>IDEVStudioUIRecibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\IDEVStudioUIRegProducto.resx">
+      <DependentUpon>IDEVStudioUIRegProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\IDEVStudioUIRegVenta.resx">
+      <DependentUpon>IDEVStudioUIRegVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IDEVStudioUISimpleDatePicker.resx">
+      <DependentUpon>IDEVStudioUISimpleDatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IDEVStudioUITextBox.resx">
+      <DependentUpon>IDEVStudioUITextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\IDEVStudioUIProducto.resx">
+      <DependentUpon>IDEVStudioUIProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manuB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{a74dea50-ee55-4a15-8f73-532861591a9f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verRecibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_Error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_Information.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_MouseClick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_MouseEnter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_Question.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SFX_Warning.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

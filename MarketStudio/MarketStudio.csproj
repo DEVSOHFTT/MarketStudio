@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA005B3C-B3F8-4D4B-B874-2C707710CE54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarketStudio</RootNamespace>
+    <AssemblyName>MarketStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D8D2267F0C7A7C334D790378CD92945137F4570B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MarketStudio_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MarketStudio.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormLoadingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoadingPage.Designer.cs">
+      <DependentUpon>FormLoadingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Forms\FormEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Forms\FormEmail.Designer.cs">
+      <DependentUpon>FormEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Forms\FormRecibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Forms\FormRecibo.Designer.cs">
+      <DependentUpon>FormRecibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto\FormABMProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producto\FormABMProducto.Designer.cs">
+      <DependentUpon>FormABMProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormDetalleVenta.Designer.cs">
+      <DependentUpon>FormDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Animador.cs" />
+    <Compile Include="Models\Carrito.cs" />
+    <Compile Include="Venta\FormAgregarProductoCarrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormAgregarProductoCarrito.Designer.cs">
+      <DependentUpon>FormAgregarProductoCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\FormAgregarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\FormAgregarVenta.Designer.cs">
+      <DependentUpon>FormAgregarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControls.Designer.cs">
+      <DependentUpon>FormControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabControl.Designer.cs">
+      <DependentUpon>FormTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\TouchScroll.cs" />
+    <EmbeddedResource Include="FormLoadingPage.resx">
+      <DependentUpon>FormLoadingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Forms\FormEmail.resx">
+      <DependentUpon>FormEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Forms\FormRecibo.resx">
+      <DependentUpon>FormRecibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producto\FormABMProducto.resx">
+      <DependentUpon>FormABMProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormDetalleVenta.resx">
+      <DependentUpon>FormDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormAgregarProductoCarrito.resx">
+      <DependentUpon>FormAgregarProductoCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\FormAgregarVenta.resx">
+      <DependentUpon>FormAgregarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControls.resx">
+      <DependentUpon>FormControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabControl.resx">
+      <DependentUpon>FormTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Client.csproj">
+      <Project>{91ee0e42-46df-423e-85c5-87321ce8d783}</Project>
+      <Name>Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{a74dea50-ee55-4a15-8f73-532861591a9f}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDEVStudioUI\IDEVStudioUI.csproj">
+      <Project>{c97827df-2433-4901-9e6e-71dfb197855a}</Project>
+      <Name>IDEVStudioUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{2e3cd1b1-f855-49f4-ad41-33905aff700d}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\Informe.png" />
+    <None Include="Resources\Cancelar.png" />
+    <None Include="Resources\Borrar.png" />
+    <None Include="Resources\Recargar.png" />
+    <None Include="Resources\Modificar.png" />
+    <None Include="Resources\Favoritos.png" />
+    <None Include="Resources\Agregar.png" />
+    <None Include="Resources\Imprimir.png" />
+    <None Include="Resources\GifCompartir.gif" />
+    <None Include="Resources\Compartir.png" />
+    <None Include="Resources\GifImprimir.gif" />
+    <None Include="Resources\GifEmpleados.gif" />
+    <None Include="Resources\Empleados.png" />
+    <None Include="Resources\Configuraciones.png" />
+    <None Include="Resources\GifCargando.gif" />
+    <None Include="Resources\GifInicio.gif" />
+    <None Include="Resources\GifProveedores.gif" />
+    <None Include="Resources\GifUsuarios.gif" />
+    <None Include="Resources\GifVentas.gif" />
+    <None Include="Resources\GifProductos.gif" />
+    <None Include="Resources\GifGastos.gif" />
+    <None Include="Resources\GifBalance.gif" />
+    <None Include="Resources\Ventas.png" />
+    <None Include="Resources\Usuarios.png" />
+    <None Include="Resources\Proveedores.png" />
+    <None Include="Resources\Productos.png" />
+    <None Include="Resources\Inicio.png" />
+    <None Include="Resources\Gastos.png" />
+    <None Include="Resources\Balance.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
